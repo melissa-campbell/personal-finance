@@ -45,6 +45,10 @@ body {
   background-color: rgb(159, 189, 187);
 }
 
+input:valid {
+  background-color: whitesmoke;
+}
+
 input:invalid {
   background-color: tomato;
 }
