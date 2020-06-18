@@ -22,9 +22,9 @@
         <h2>Welcome to your savings estimator!</h2>
         <p>Retirement is likely on your mind.  Do you have a plan? 
           Our number 1 goal should be to spend less than we earn.</p>
-        <p>Savings are important too.
-          Let's plan to save 6 months of expenses for emergencies.
-          Let's plan to save 25 years of expenses for retirement.</p>
+        <p>Savings are important too.</p>
+        <p>Let's plan to save 6 months of expenses for emergencies.  This should be in cash or something that can be easily converted into cash.</p>
+        <p>Let's plan to save 25 years of expenses for retirement.  This should be invested to generate at minimum 4% withdrawal rate.</p>
       </div>
 
       <div class="expenses col">
@@ -49,6 +49,8 @@
           <input type="number" name="electric" id="electric" value="100"><br>
           <label for="water">Water/Sewer: </label>
           <input type="number" name="water" id="water" value="100"><br>
+          <label for="gas">Gasoline/Oil: </label>
+          <input type="number" name="gas" id="gas" value="150"><br>
           <label for="groceries">Groceries: </label>
           <input type="number" name="groceries" id="groceries" value="500"><br>
           <label for="restaurants">Restaurants: </label>
@@ -67,10 +69,10 @@
         </form>
       </div> 
 
-      <div class="goals col">
+      <div class="goals col" id="goals">
         <h2>Savings Goals</h2>
-        <p>You will need (X amount) for your emergency fund.</p>
-        <p>You will need (X amount) for your retirement fund.</p>
+        <p>You will need 6 months savings for your emergency fund.</p>
+        <p>You will need 25 years savings for your retirement fund.</p>
       </div>
     </div>
 

@@ -3,29 +3,29 @@
 ==================================== */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: blanchedalmond;
-    font-family: cursive;
+  background-color: blanchedalmond;
+  font-family: cursive;
 }
 
 .main-header{
-    background-color: rgb(159, 189, 187);
-    padding-left: 10px;
-    padding-bottom: 15px;
+  background-color: rgb(159, 189, 187);
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 .main-nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav a {
-    color: brown;
-    padding-right: 10px;
+  color: brown;
+  padding-right: 10px;
 }
 
 .col {
@@ -50,15 +50,15 @@ body {
 
 @media (min-width: 769px) {
 
-	.main-header,
-    .main-nav,
-    .row {
+  .main-header,
+  .main-nav,
+  .row {
 		display: flex;
 	}
    
   .main-header {
-		flex-direction: column;
-		align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .row {
@@ -70,8 +70,8 @@ body {
 @media (min-width: 1025px) {
 
 	.main-header {
-		flex-direction: row;
-		justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
  

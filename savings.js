@@ -51,7 +51,17 @@ submit.addEventListener("click", function(){
     monthlyExpenses = getMonthlyExpenses();
     emergencyFund = getEmergencyFund(monthlyExpenses);
     retirementFund = getRetirementFund(monthlyExpenses);
+
+    let message = `<h2>Savings Goals</h2>
+    <p>You are currently spending $${monthlyExpenses} each month.</p>
+    <p>At this rate, you should save $${emergencyFund} to cover 6 months in case of an emergency.</p>
+    <p>You should aim to save $${retirementFund} for your retirement.</p>
+    <p>Feel free to adjust the numbers to more accurately reflect your desired spending in retirement.</p>`
+    console.log(message);
+    //TODO - Display on page!!!
+    document.getElementById("goals").innerHTML = message;
 })
+
 
 
 
