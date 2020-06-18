@@ -28,39 +28,43 @@
       </div>
 
       <div class="expenses col">
+        <form action="post" name="user-input">
         <h2>Expenses</h2>
         <p>Enter fixed monthly expenses here:</p>
           <label for="mortgage">Mortgage/Rent: </label>
-          <input type="text" name="mortgage" id="mortgage"><br>
+          <input type="number" name="mortgage" id="mortgage" value="1000"><br>
           <label for="tax">Property Taxes: </label>
-          <input type="text" name="tax" id="tax"><br>
+          <input type="number" name="tax" id="tax" value="250"><br>
+          <label for="phone">Auto/Insurance: </label>
+          <input type="number" name="auto" id="auto" value="500"><br>
           <label for="internet">Internet/Cable: </label>
-          <input type="text" name="internet" id="internet"><br>
+          <input type="number" name="internet" id="internet" value="100"><br>
           <label for="phone">Phone: </label>
-          <input type="text" name="phone" id="phone"><br>
+          <input type="number" name="phone" id="phone" value="50"><br>
           <label for="loan">Student Loans: </label>
-          <input type="text" name="loan" id="loan">
+          <input type="number" name="loan" id="loan" value="250">
 
         <p>Enter variable monthly expenses here:</p>
           <label for="electric">Electric: </label>
-          <input type="text" name="electric" id="electric"><br>
+          <input type="number" name="electric" id="electric" value="100"><br>
           <label for="water">Water/Sewer: </label>
-          <input type="text" name="water" id="water"><br>
+          <input type="number" name="water" id="water" value="100"><br>
           <label for="groceries">Groceries: </label>
-          <input type="text" name="groceries" id="groceries"><br>
+          <input type="number" name="groceries" id="groceries" value="500"><br>
           <label for="restaurants">Restaurants: </label>
-          <input type="text" name="restaurants" id="restaurants"><br>
+          <input type="number" name="restaurants" id="restaurants" value="200"><br>
           <label for="pets">Pets: </label>
-          <input type="text" name="pets" id="pets"><br>
+          <input type="number" name="pets" id="pets" value="20"><br>
           <label for="vacation">Vacation: </label>
-          <input type="text" name="vacation" id="vacation"><br>
+          <input type="number" name="vacation" id="vacation" value="100"><br>
           <label for="fun">Fun: </label>
-          <input type="text" name="fun" id="fun">
+          <input type="number" name="fun" id="fun" value="100">
           
           <div class="button">
-            <input type="button" value="Reset" class="button-reset" >
-            <input type="button" value="Submit" class="button-submit">
+            <input type="reset" value="Reset" id="button-reset" >
+            <input type="button" value="Submit" id="button-submit">
           </div>
+        </form>
       </div> 
 
       <div class="goals col">
@@ -69,5 +73,7 @@
         <p>You will need (X amount) for your retirement fund.</p>
       </div>
     </div>
+
+    <script src="savings.js"></script> 
 </body>
 </html>
