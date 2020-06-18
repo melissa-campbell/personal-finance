@@ -8,4 +8,4 @@ Mobile First Design - Navigation Menu, Flexbox, Media Queries
 
 HTML Form
 
-JavaScript Functions - form validation, math calculations, display dynamic HTML
+JavaScript Functions - form validation, math calculations, display dynamic HTML, commenting
