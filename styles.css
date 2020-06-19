@@ -7,14 +7,16 @@
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: beige;
   font-family: cursive;
+  color: rgb(83, 11, 11);
 }
 
 .main-header{
-  background-color: rgb(159, 189, 187);
+  background-color: rgb(117, 196, 150);
   padding-left: 10px;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .main-nav {
@@ -28,9 +30,9 @@ body {
   padding-right: 10px;
 }
 
-.col {
-  padding-right: 50px;
-  max-width: 500px;
+.welcome,
+.expenses {
+  padding-right: 30px;
 }
 
 .button {
@@ -62,26 +64,31 @@ input:invalid {
   .main-header,
   .main-nav,
   .row {
-		display: flex;
+    display: flex;
 	}
    
   .main-header {
-		flex-direction: column;
-		align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .row {
     flex-wrap: wrap;
+    justify-content: center;
   }
   
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1285px) {
   
   .main-header {
     flex-direction: row;
-		justify-content: space-between;
+    justify-content: space-between;
   }
   
+  /* reduce size of welcome section for 3 column view */
+  .col {
+    max-width: 450px;
+  }
  
 }
